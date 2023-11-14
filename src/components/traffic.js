@@ -3,7 +3,7 @@ import Cookies from 'js-cookie';
 
 export const Traffic = () => {
   const [userIp, setUserIp] = useState(null);
-  const urlString = "http://www.yourwebsite.com/?utm_source=tiktok&utm_medium=paid_social&utm_campaign=black_friday&utm_term=social_media_tool&utm_content=ugc_ad&cyz=23$jjhfj=45678$jfjf=&sdf=3456";
+  const urlString = window.location.href;
   const paramString = urlString.split('?')[1];
   const queryString = new URLSearchParams(paramString);
   const urlObject = {};
